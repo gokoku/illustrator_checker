@@ -20,9 +20,6 @@ function cmykCheck() {
     sum = color.cyan + color.magenta + color.yellow + color.black
 
     if (sum >= 300 && !layer.locked) {
-      doc.pathItems[i].strokeColor = checkColor
-      doc.pathItems[i].strokeWidth = 5
-
       message.push(
         "C: " +
           color.cyan +
