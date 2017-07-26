@@ -4,17 +4,17 @@
 //
 
 
-#include "./checker/colorModeCheck.jsx"
-#include "./checker/fontCheck.jsx"
-#include "./checker/spotColorCheck.jsx"
-#include "./checker/linkImageCheck.jsx"
-#include "./checker/rasterImageCheck.jsx"
-#include "./checker/displayDialog.jsx"
-#include "./checker/layerCheck.jsx"
-#include "./checker/lockedItemCheck.jsx"
-#include "./checker/guideItemCheck.jsx"
-#include "./checker/isolatedItemCheck.jsx"
-#include "./checker/cmykCheck.jsx"
+#include "./_checker/colorModeCheck.jsx"
+#include "./_checker/fontCheck.jsx"
+#include "./_checker/spotColorCheck.jsx"
+#include "./_checker/linkImageCheck.jsx"
+#include "./_checker/rasterImageCheck.jsx"
+#include "./_checker/displayDialog.jsx"
+#include "./_checker/layerCheck.jsx"
+#include "./_checker/lockedItemCheck.jsx"
+#include "./_checker/guideItemCheck.jsx"
+#include "./_checker/isolatedItemCheck.jsx"
+#include "./_checker/cmykCheck.jsx"
 
 
 var win = new Window("dialog", "checker")

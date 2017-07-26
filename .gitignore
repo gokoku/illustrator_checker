@@ -55,7 +55,7 @@ flycheck_*.el
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
 
 # Thumbnails
 ._*
@@ -77,3 +77,5 @@ Temporary Items
 .apdisk
 
 
+_installed/
+develop*.jsx
