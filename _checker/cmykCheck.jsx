@@ -7,11 +7,6 @@ function cmykCheck() {
   var doc = app.activeDocument
   var result = false
   var message = []
-  var checkColor = new CMYKColor()
-  checkColor.cyan = 0
-  checkColor.magenta = 100
-  checkColor.yellow = 100
-  checkColor.black = 0
 
   for (i = 0; i < doc.pathItems.length; i++) {
     color = doc.pathItems[i].fillColor
