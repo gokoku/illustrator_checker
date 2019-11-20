@@ -4,8 +4,9 @@
 //
 
 var doc = app.activeDocument
-
+var selected = 0
 var items = doc.pathItems
+
 for (i = 0; i <items.length; i++) {
   color = items[i].fillColor
 
@@ -14,8 +15,13 @@ for (i = 0; i <items.length; i++) {
   if (sum >= 300) {
     if (items[i].layer.locked == false) {
       items[i].selected = true
+      selected++
     }
   }
 }
 
-alert("CMYK総和 300% の塗りオブジェクトを選択しました")
+if (selected == 0) {
+  alert("CMYK総和 300% の塗りオブジェクトはありませんでした")
+} else {
+  alert("CMYK総和 300% の塗りオブジェクトを選択しました")
+}
