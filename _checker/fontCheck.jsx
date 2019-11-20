@@ -7,12 +7,15 @@ function fontCheck() {
   var doc = app.activeDocument
   var result = false
   var message = []
-
-  if (doc.textFrames.length > 0) {
+  var texts = doc.textFrames
+  if (texts.length > 0) {
     message[0] = 'フォントデータあります'
-    for (i = 0; i < doc.textFrames.length; i++) {
-      textArtRange = doc.textFrames[i].textRange
-      message.push(textArtRange.characterAttributes.textFont)
+    for (i = 0; i < texts.length; i++) {
+      if (texts[i].textRanges.length > 0) {
+        message.push("* " + texts[i].textRange.characterAttributes.textFont.name)
+      } else {
+        message.push('* TEXT孤立点')
+      }
     }
   }
   if (message.length == 0) {
